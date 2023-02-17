@@ -1418,6 +1418,8 @@
 		53439B6813B932C5005C0CC8 /* PreferencePane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencePane.swift; sourceTree = "<group>"; };
 		53439B6D13B932DB005C0CC8 /* PrefLibraryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefLibraryController.swift; sourceTree = "<group>"; };
 		53439B7013B932ED005C0CC8 /* PrefGameplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefGameplayController.swift; sourceTree = "<group>"; };
+		55505B272990E1CB002E1A24 /* libzstd-play.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libzstd-play.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55505B2F2990E1E1002E1A24 /* libzstd-play2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libzstd-play2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556CEBEF1BCE173B00F00EAA /* Graphics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Graphics.xcassets; sourceTree = "<group>"; };
 		55BE80422542A3DC00E3841E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		55BE80B42542A51600E3841E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -2151,6 +2153,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55505B252990E1CB002E1A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55505B2D2990E1E1002E1A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		820EB7401483F9A2008EC398 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2773,6 +2789,8 @@
 				8F94DEBA250EC701003A1F33 /* OpenEmuQLThumbnail.appex */,
 				8F94DECF250ED838003A1F33 /* OpenEmuQLPreview.appex */,
 				8F7C2948288A2A2200A16C09 /* OECoreListUpdater */,
+				55505B272990E1CB002E1A24 /* libzstd-play.a */,
+				55505B2F2990E1E1002E1A24 /* libzstd-play2.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4387,6 +4405,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55505B232990E1CB002E1A24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55505B2B2990E1E1002E1A24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -4578,6 +4610,40 @@
 			productName = PlayStation;
 			productReference = 3DB744BA1BD8BA9E00C23E74 /* PlayStation 2.oesystemplugin */;
 			productType = "com.apple.product-type.bundle";
+		};
+		55505B262990E1CB002E1A24 /* zstd-play */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55505B2A2990E1CB002E1A24 /* Build configuration list for PBXNativeTarget "zstd-play" */;
+			buildPhases = (
+				55505B232990E1CB002E1A24 /* Headers */,
+				55505B242990E1CB002E1A24 /* Sources */,
+				55505B252990E1CB002E1A24 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zstd-play";
+			productName = "zstd-play";
+			productReference = 55505B272990E1CB002E1A24 /* libzstd-play.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55505B2E2990E1E1002E1A24 /* zstd-play2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55505B302990E1E2002E1A24 /* Build configuration list for PBXNativeTarget "zstd-play2" */;
+			buildPhases = (
+				55505B2B2990E1E1002E1A24 /* Headers */,
+				55505B2C2990E1E1002E1A24 /* Sources */,
+				55505B2D2990E1E1002E1A24 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zstd-play2";
+			productName = "zstd-play2";
+			productReference = 55505B2F2990E1E1002E1A24 /* libzstd-play2.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		820EB7391483F9A2008EC398 /* NeoGeoPocket */ = {
 			isa = PBXNativeTarget;
@@ -5378,6 +5444,12 @@
 					3DB744A51BD8BA9E00C23E74 = {
 						ProvisioningStyle = Manual;
 					};
+					55505B262990E1CB002E1A24 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					55505B2E2990E1E1002E1A24 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					820EB7391483F9A2008EC398 = {
 						ProvisioningStyle = Manual;
 					};
@@ -5612,6 +5684,8 @@
 				05DB72A02532681B0098459D /* OpenEmuTests */,
 				012148042537C6D6007F3C84 /* OESystemPluginPostInstall */,
 				8F7C2947288A2A2200A16C09 /* OECoreListUpdater */,
+				55505B262990E1CB002E1A24 /* zstd-play */,
+				55505B2E2990E1E1002E1A24 /* zstd-play2 */,
 			);
 		};
 /* End PBXProject section */
@@ -6413,6 +6487,20 @@
 			files = (
 				3DB744BD1BD8BAB200C23E74 /* OEPS2SystemController.m in Sources */,
 				3DB744BF1BD8BAB200C23E74 /* OEPS2SystemResponder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55505B242990E1CB002E1A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55505B2C2990E1E1002E1A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7832,6 +7920,86 @@
 			};
 			name = Release;
 		};
+		55505B282990E1CB002E1A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		55505B292990E1CB002E1A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		55505B312990E1E2002E1A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		55505B322990E1E2002E1A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		820EB7481483F9A2008EC398 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9063,6 +9231,24 @@
 			buildConfigurations = (
 				3DB744B81BD8BA9E00C23E74 /* Debug */,
 				3DB744B91BD8BA9E00C23E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55505B2A2990E1CB002E1A24 /* Build configuration list for PBXNativeTarget "zstd-play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55505B282990E1CB002E1A24 /* Debug */,
+				55505B292990E1CB002E1A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55505B302990E1E2002E1A24 /* Build configuration list for PBXNativeTarget "zstd-play2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55505B312990E1E2002E1A24 /* Debug */,
+				55505B322990E1E2002E1A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
