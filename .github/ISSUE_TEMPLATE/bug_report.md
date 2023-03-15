@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: fast forward cam doesnt work
 about: Report a reproducible problem with OpenEmu to help us resolve it
 title: ''
 labels: ''
@@ -12,25 +12,13 @@ Summary of issue
 Read https://github.com/OpenEmu/OpenEmu/wiki/Troubleshooting:-Reporting-problems
 
 # Steps to reproduce
-
-1. Describe step-by-step
-1. How to cause the problem
-1. leaving nothing out
-1. too much information is better than too little
+in every game, the app doesnt let me to activate the fast forward camera
 
 # Expected Behavior
-
-1. Describe what
-1. you want to
-1. happen
-
-# Observed Behavior
-
-1. Describe what you see
-1. Actually happen
-1. when you follow the steps above
+i expect you give me the solution so i dont sleep while playing my games
 
 # Debugging Information
 
-- OpenEmu Version: ???
-- macOS Version: ???
+- OpenEmu Version: v2.3.3
+- macOS Version: yes
+- 
